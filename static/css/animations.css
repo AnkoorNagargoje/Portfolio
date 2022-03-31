@@ -1,0 +1,92 @@
+@keyframes a-tag-anime{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes dot-anime{
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes scroll-to-know-anime{
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translate(0px);
+        opacity:1;
+    }
+}
+
+@keyframes circle-anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes content-box-anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes frontend-box-anime{
+    0%{
+        background-color:rgba(252,225,208,1);
+    }
+    33%{
+        background-color:rgba(255,173,214,1);
+    }
+    66%{
+        background-color:rgba(162,186,245,1);
+    }
+    100%{
+        background-color:rgba(252,225,208,1);
+    }
+}
+
+@keyframes backend-box-anime{
+    0%{
+        background-color:rgba(62,133,238,1);
+    }
+    33%{
+        background-color:rgba(227,137,240,1);
+    }
+    66%{
+        background-color:rgba(243,193,124,1);
+    }
+    100%{
+        background-color:rgba(62,133,238,1);
+    }
+}
+
+@keyframes others-box-anime{
+    0%{
+        background-color:rgba(208,246,255,1);
+    }
+    33%{
+        background-color:rgba(255,237,237,1);
+    }
+    66%{
+        background-color:rgba(255,255,231,1);
+    }
+    100%{
+        background-color:rgba(208,246,255,1);
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load widget_tweaks %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static '/css/animations.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/5ca6c6c476.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon"
+          href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/waving-hand_1f44b.png">
+    <title>ankoor nagargoje</title>
+
+
+</head>
+
+
+<body class="font">
+<header>
+    <nav class="animate__animated animate__fadeInDown">
+        <div class="navbar" name="WEB NAVIGATION BAR">
+            <div>
+                <li class="cname cname-gradient">
+                    <a href="/">ankoor nagargoje</a>
+                </li>
+            </div>
+
+            <div>
+                <li>
+                    <a href="#aboutme" class="hover-border">about</a>
+                </li>
+                <li>
+                    <a href="/blog/" class="hover-border">blog</a>
+                </li>
+                <li>
+                    <a href="#projects" class="hover-border">projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover-border">contact</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="firstdiv">
+    <div class="firstdiv-1">
+        <p class="animate__animated animate__fadeInDown animate__delay-1s">hi homies👋</p>
+        <h1 class="animate__animated animate__fadeInDown animate__delay-2s ">i'm am
+            <span class="dot-1">.</span>
+            <span class="dot-2">.</span>
+            <span class="dot-3">.</span></h1>
+        <h1 class="animate__animated animate__fadeInDown animate__delay-4s"><a
+                href="https://twitter.com/ankoornagargoje" target="_blank"><span
+                class="name-border">ankoor nagargoje😉</span></a>
+        </h1>
+        <br>
+        <h3 class="animate__animated animate__fadeInDown animate__delay-5s" style="font-weight:500;">naam toh suna
+            hoga😎</h3>
+        <br><br><br>
+        <h4 class="scroll-to-know-more">scroll to know more 'bout me ↓</h4>
+    </div>
+    <div class="firstdiv-1 animate__animated animate__fadeIn animate__delay-4s">
+        <img src="{% static '/images/ankoor.jpg' %}" alt="ankoor nagargoje picture" class="my-image">
+        <div class="dotted-image-background-1"></div>
+        <div class="dotted-image-background-2"></div>
+    </div>
+</div>
+
+<div class="about-me" name="About Me" id="aboutme">
+    <h1 class="name-border">about me 😎</h1>
+    <div class="about-me-div">
+        <h2>
+            so your homie is 17 years old, loves black color and lives in nashik, maharashtra, india🇮🇳. built this
+            website while studying for jee,
+            that means he ain't having a degree yet 📜.<br><br>
+            now bragging about him, he likes to build stuff using python/django, likes to watch movies, play football
+            and cricket and eat misal pav cause he's a nashikar 😉<br><br>
+            in his free time, he writes blogs right
+            <a href="/blog/"><span class="cname-gradient name-border">here</span></a>,
+            studies for exams and shitposts and shares startup memes on
+            <a href="https://twitter.com/ankoornagargoje/" target="_blank"><span class="cname-gradient name-border">twitter</span></a>.
+            <br><br><br>
+            <hr>
+            now being serious😃, he is a self-taught full stack django developer, loves frontend but hates css and hates
+            backend but
+            loves python🐍, he has built some pretty good web apps, which you can see right
+            <a href="#projects"><span class="cname-gradient name-border">here</span></a>.<br><br>
+            he loves designing websites and could design one for you, contact him now right
+            <a href="#contact" class=""><span class="cname-gradient name-border">here</span></a>
+        </h2>
+    </div>
+    <br><br><br>
+    <h1>tech stack 💻</h1>
+    <div class="tech-stack-div">
+        <div class="frontend-box-circle">
+            <div class="frontend-box">
+                <h3>🧑‍🎨<br>frontend</h3>
+            </div>
+        </div>
+
+        <div class="frontend-circle">
+            <div class="frontend-content-box frontend-html">
+                <h3><i class="fa-brands fa-html5"></i><br>html</h3>
+            </div>
+            <div class="frontend-content-box frontend-css">
+                <h3><i class="fa-brands fa-css3"></i><br>css</h3>
+            </div>
+            <div class="frontend-content-box frontend-js">
+                <h3><i class="fa-brands fa-js"></i><br>js</h3>
+            </div>
+        </div>
+
+
+        <div class="backend-box-circle">
+            <div class="backend-box">
+                <h3>⚙️<br>backend</h3>
+            </div>
+        </div>
+
+        <div class="backend-circle">
+            <div class="backend-content-box backend-python">
+                <h3><i class="fa-brands fa-python"></i><br>python</h3>
+            </div>
+            <div class="backend-content-box backend-django">
+                <h3>
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px"
+                         height="24px" class="django-svg">
+                        <path d="M18 6h-1c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1h1c.552 0 1 .448 1 1v1C19 5.552 18.552 6 18 6zM19 16.702c0 .952-.213 3.983-2.741 5.135-.25.114-.542.095-.792-.018l-1.541-.698c-.369-.167-.387-.667-.046-.884 1.46-.927 2.12-2.253 2.12-3.535V9c0-.552.448-1 1-1h1c.552 0 1 .448 1 1V16.702zM11 4v4.159C10.653 8.018 9.904 8 9.535 8 6.759 8 4.19 9.306 4.19 13c0 4.42 3.48 5 5.81 5 .703 0 2.085-.053 3.143-.207C13.636 17.721 14 17.3 14 16.802V4c0-.552-.448-1-1-1h-1C11.448 3 11 3.448 11 4zM9.97 15.533c-1.31 0-2.58-.413-2.58-2.533s1.27-2.45 2.58-2.45c.32 0 .68.06 1.03.14v4.703C10.65 15.473 10.29 15.533 9.97 15.533z"/>
+                    </svg>
+                    <br>django
+                </h3>
+            </div>
+        </div>
+
+
+        <div class="others-box-circle">
+            <div class="others-box">
+                <h3>😁<br>Other</h3>
+            </div>
+        </div>
+        <div class="others-circle">
+            <div class="others-content-box others-github">
+                <h3><i class="fa-brands fa-github"></i><br>github</h3>
+            </div>
+            <div class="others-content-box others-tailwind">
+                <h3>
+                    <img src="{% static '/images/tailwindcss-logo.svg' %}" alt="tailwind css logo" width="25px" class="tailwind-image">
+                    <br>tailwind css
+                </h3>
+            </div>
+            <div class="others-content-box others-jquery">
+                <h3>
+                    <img src="{% static '/images/jquery_logo.svg' %}" alt="jquery logo" width="25px" class="jquery-image">
+                    <br>jquery
+                </h3>
+            </div>
+            <div class="others-content-box others-postgresql">
+                <h3 style="line-height:17px;">
+                    <img src="{% static '/images/postgresql-icon.png' %}" alt="postgresql" width="30%">
+                    <br>postgre<br>sql</h3>
+            </div>
+        </div>
+
+
+        <div class="image-div">
+            <img src="{% static '/images/ankoor-2.jpg' %}" alt="ankoor nagargoje picture"
+                 style="border-radius:100px;width:15%;">
+        </div>
+    </div>
+</div>
+
+
+<div class="projects" name="projects" id="projects">
+    <h1 class="name-border">projects🚀</h1>
+    <br><br><br><br>
+    <a href="https://hyperlynk-1.herokuapp.com/" target="_blank">
+        <div class="project-card-border">
+            <div class="project-card">
+                <h2><span class="name-border">hyperlynk.io</span></h2><br><br>
+                <img src="{% static '/images/hyperlynk-ss.png' %}" alt="hyperlynk image" width="100%"
+                     style="border-radius:20px;">
+                <h3 style="font-weight:500;">a free link-in-bio tool that pays users!🤯<br>(still in development tho😉)
+                </h3><br>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="contact" name="contact me" id="contact">
+    <h1 class="name-border">contact me📢</h1>
+    <div class="contact-form">
+        <h2>your homie would love to hear from you😉</h2>
+        <br><br>
+        <form method="post">
+            {% csrf_token %}
+            <div class="contact-flexbox">
+                <div>
+                    <h2>name 🤘</h2>
+                    {% render_field form.name placeholder="john cena" class="common-inputs name-border"%}
+                </div>
+
+                <div>
+                    <h2>email 📧</h2>
+                    {% render_field form.email placeholder="johncena@gmail.com" class="common-inputs name-border"%}
+                </div>
+            </div>
+            <br><bR><br>
+            <div>
+                <h2>message 😃</h2>
+                {% render_field form.message placeholder="this website is great, love it😉" class="message-input name-border font" %}
+            </div>
+
+            <div class="submit-button-div font">
+                <button type="submit" class="submit-button">send message</button>
+            </div>
+        </form>
+
+    </div>
+    <br><br>
+    <div class="socials">
+        <div><h5>connect with me on ....</h5></div>
+        <div><a href="https://twitter.com/ankoornagargoje"><i class="fa-brands fa-twitter"></i></a></div>
+        <div><a href="https://instagram.com/ankoornagargoje"><i class="fa-brands fa-instagram"></i></a></div>
+        <div><a href="https://github.com/AnkoorNagargoje"><i class="fa-brands fa-github"></i></a></div>
+        <div><a href="https://snapchat.com/anko.r"><i class="fa-brands fa-snapchat"></i></a></div>
+    </div>
+</div>
+
+
+</body>
+</html>
