@@ -18,4 +18,4 @@ def home_view(request):
 
 
 def blog_home(request):
-    return render(request, 'blog-base.html')
+    return render(request, 'blog-home.html')

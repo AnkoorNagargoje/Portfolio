@@ -5,6 +5,10 @@ body{
     background-color: #141414;
     color: #cbd5e1;
     margin:0;
+    background: repeating-radial-gradient(circle, transparent, transparent 7.0px, #303030 7.0px, #303030 9.0px), repeating-radial-gradient(circle, transparent, transparent 7.0px, #303030 7.0px, #303030 9.0px), #303030;
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px, 40px 20px;
+    background-color: #151515;
 }
 a{
     text-decoration:none;

@@ -3,32 +3,49 @@
 <head>
     {% load static %}
     <meta charset="UTF-8">
-    <title>ankoor nagargoje | blogs</title>
+    {% block head %}
+    <!-- Title, meta tag and keywords -->
+    {% endblock %}
     <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
     <link rel="stylesheet" href="{% static '/css/blog-base.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/5ca6c6c476.js" crossorigin="anonymous"></script>
+    <link rel="icon"
+          href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/waving-hand_1f44b.png">
+
 </head>
 <body class="font">
 <header>
     <nav class="animate__animated animate__fadeInDown">
         <div class="navbar" name="NAVIGATION BAR">
-            <div>
+            <div style="margin-top:-8px;">
                 <li class="cname cname-gradient">
-                    <a href="/">ankoor nagargoje <sup>blog</sup></a>
+                    <a href="/blog/">ankoor nagargoje<sup>blogs</sup></a>
                 </li>
             </div>
 
-            <div style="padding-top:15px;">
-                <li><a href="https://twitter.com/ankoornagargoje"><i class="fa-brands fa-twitter socials"></i></a></li>
-                <li><a href="https://instagram.com/ankoornagargoje"><i class="fa-brands fa-instagram socials"></i></a></li>
-                <li><a href="https://github.com/AnkoorNagargoje"><i class="fa-brands fa-github socials"></i></a></li>
-                <li><a href="https://snapchat.com/anko.r"><i class="fa-brands fa-snapchat socials"></i></a></li>
+            <div>
+                <li>
+                    <a href="/#aboutme" class="hover-border">about</a>
+                </li>
+                <li>
+                    <a href="/blog/" class="hover-border">blog</a>
+                </li>
+                <li>
+                    <a href="/#projects" class="hover-border">projects</a>
+                </li>
+                <li>
+                    <a href="/#contact" class="hover-border">contact</a>
+                </li>
             </div>
         </div>
     </nav>
 </header>
-<br><br><br><br>
-<center><h1>sorry! no blogs yet<br>publishing one soon🚀</h1></center>
+
+{% block content %}
+
+{% endblock %}
+
 </body>
 </html>
