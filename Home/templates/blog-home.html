@@ -9,25 +9,26 @@
 {% block content %}
 
 <div class="blogs-div">
+    {% for blog in list %}
     <div class="blogs-flex">
-        <div class="blog-container-border">
-            <div class="blog-container">
-                HI!!
-            </div>
-        </div>
+        <a href="{{ blog.url }}">
+            <div class="blog-container-border">
+                <div class="blog-container">
+                    <img src="{{ blog.image_url }}" alt="{{ blog.title }} image" class="blog-image">
+                    <div class="blog-elements-flex">
+                        <h3 style="border-bottom:dashed 1px #f6f6f6;">{{ blog.read_time }} min read</h3>
+                        {% if blog.type == 'My Journey' %}
+                        <h3 style="color:rgba(247,253,166,1);">{{ blog.type }}</h3>
+                        {% endif %}
+                    </div>
+                    <h2><span class="gradient-border">{{ blog.title }}</span></h2>
+                    <h4>Written on: <span style="border-bottom:dashed 1px #f6f6f6;">{{ blog.time }}</span></h4>
 
-        <div class="blog-container-border">
-            <div class="blog-container">
-                HI!!
+                </div>
             </div>
-        </div>
-
-        <div class="blog-container-border">
-            <div class="blog-container">
-                HI!!
-            </div>
-        </div>
+        </a>
     </div>
+    {% endfor %}
 </div>
 
 {% endblock %}

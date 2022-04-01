@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.contrib import messages
+from .models import Blog
 
 
 def home_view(request):
@@ -18,4 +19,5 @@ def home_view(request):
 
 
 def blog_home(request):
-    return render(request, 'blog-home.html')
+    list = Blog.objects.all().order_by('-time')
+    return render(request, 'blog-home.html', {'list': list})
