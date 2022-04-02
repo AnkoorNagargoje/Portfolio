@@ -1,6 +1,6 @@
 .navbar {
   width: 80%;
-  padding: 25px 0px 25px 0px;
+  padding: 20px 0px 25px 0px;
   background-color: transparent;
   margin: auto;
   color:#cbd5e1;
@@ -15,7 +15,7 @@
 .navbar div:nth-child(2) {
   justify-content: flex-end;
   margin-left: auto;
-  padding-top:7px;
+  padding-top:10px;
 }
 .navbar div:nth-child(2) li{
   margin-left:25px;
