@@ -1,10 +1,14 @@
 html{
     scroll-behavior: smooth;
+    max-width:100%;
+    overflow-x:hidden;
 }
 body{
     background-color: #141414;
     color: #cbd5e1;
     margin:0;
+    max-width:100%;
+    overflow-x:hidden;
     background: repeating-radial-gradient(circle, transparent, transparent 7.0px, #303030 7.0px, #303030 9.0px), repeating-radial-gradient(circle, transparent, transparent 7.0px, #303030 7.0px, #303030 9.0px), #303030;
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px, 40px 20px;
@@ -180,12 +184,12 @@ h1{
     }
 }
 
-@media screen and (min-width: 780px), screen and (min-height: 1000px) {
+@media screen and (min-width: 780px) and(max-width: 1000px) and (min-height: 1000px) {
     .scroll-to-know-more{
         display:block;
     }
     .firstdiv{
-        margin-top:15vh;
+        margin-top:0vh;
     }
 }
 
