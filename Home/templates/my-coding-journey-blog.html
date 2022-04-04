@@ -19,13 +19,6 @@
         document.getElementById("myBar").style.width = scrolled + "%";
     }
 
-
-
-
-
-
-
-
 </script>
 
 <div style="width:100%;height:5px;background: transparent;position:fixed;top:0;">
@@ -47,15 +40,8 @@
                 <h3 class="blog-read-time">{{ blog.read_time }} mins read</h3>
                 <h3>•</h3>
                 <h3 class="blog-type-journey">{{ blog.type }}</h3>
-            </div>
-        </div>
-        <div>
-            <div class="blog-socials-flex">
-                <div><a href="mailto:ankoornagargoje@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
-                <div><a href="https://twitter.com/ankoornagargoje"><i class="fa-brands fa-twitter"></i></a></div>
-                <div><a href="https://instagram.com/ankoornagargoje"><i class="fa-brands fa-instagram"></i></a></div>
-                <div><a href="https://github.com/AnkoorNagargoje"><i class="fa-brands fa-github"></i></a></div>
-                <div><a href="https://snapchat.com/anko.r"><i class="fa-brands fa-snapchat"></i></a></div>
+                <h3>•</h3>
+                <h3>published: {{ blog.time }}</h3>
             </div>
         </div>
     </div>
@@ -233,5 +219,15 @@
             Thanks for reading till here💙
         </p>
     </div>
+    <br><br><br><br>
+    <div><span style="font-size:1.3em;">connect with me...</span><br><br>
+            <div class="blog-socials-flex">
+                <div><a href="mailto:ankoornagargoje@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
+                <div><a href="https://twitter.com/ankoornagargoje"><i class="fa-brands fa-twitter"></i></a></div>
+                <div><a href="https://instagram.com/ankoornagargoje"><i class="fa-brands fa-instagram"></i></a></div>
+                <div><a href="https://github.com/AnkoorNagargoje"><i class="fa-brands fa-github"></i></a></div>
+                <div><a href="https://snapchat.com/anko.r"><i class="fa-brands fa-snapchat"></i></a></div>
+            </div>
+        </div>
 </div>
 {% endblock %}

@@ -1,9 +1,8 @@
 .blog{
     width:70%;
-    margin:auto;
+    margin:50px auto;
     padding:40px;
     background-color:#202020;
-    margin-top:50px;
     text-align:center;
     border-radius:20px;
     text-transform: lowercase;
@@ -24,9 +23,10 @@ h1, h2, h3, p{
 }
 .blog-header-flex{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     flex-wrap:wrap;
     align-items:baseline;
+    gap:20px;
 }
 .blog-title-flex{
     display:flex;
@@ -40,6 +40,8 @@ h1, h2, h3, p{
     gap:20px;
 }
 .blog-socials-flex{
+    width:50%;
+    margin:auto;
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
