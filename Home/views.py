@@ -24,4 +24,5 @@ def blog_home(request):
 
 
 def my_coding_journey(request):
-    return render(request, 'my-coding-journey-blog.html')
+    list = Blog.objects.all().order_by('-time')
+    return render(request, 'my-coding-journey-blog.html', {'list': list})

@@ -1,14 +1,237 @@
 {% extends 'blog-base.html' %}
 {% load static %}
 {% block head %}
+<link rel="stylesheet" href="{% static '/css/blog.css' %}">
 <title>my coding journey</title>
 <meta name="description" content="ankoor nagargoje's coding journey, from the start till now.">
 <meta name="keywords" content="coding journey, coding blogs, ankoor nagargoje, ankoor, code journey, journey">
 {% endblock %}
 
-{% block content %}
-<br><br><bR><br><br>
-<center><h2>wait wait, i know you're excited to know 'bout my journey.<br>but u gotta wait till i write it. <br> i'll compelete
-it as fast as i can.😉<br>thanks for checking out!</h2></center>
+{% block progress %}
+<script>
+// When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
 
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+
+
+
+
+
+
+
+</script>
+
+<div style="width:100%;height:5px;background: transparent;position:fixed;top:0;">
+    <div style="height:5px;background-image: linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );width:0%;z-index:9999;"
+         id="myBar">
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="blog">
+    {% for blog in list %}
+    <div class="blog-header-flex">
+        <div>
+            <div class="blog-title-flex">
+                <h1 class="blog-tit">{{ blog.title }}</h1>
+            </div>
+            <div class="blog-info-flex">
+                <h3 class="blog-read-time">{{ blog.read_time }} mins read</h3>
+                <h3>•</h3>
+                <h3 class="blog-type-journey">{{ blog.type }}</h3>
+            </div>
+        </div>
+        <div>
+            <div class="blog-socials-flex">
+                <div><a href="mailto:ankoornagargoje@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
+                <div><a href="https://twitter.com/ankoornagargoje"><i class="fa-brands fa-twitter"></i></a></div>
+                <div><a href="https://instagram.com/ankoornagargoje"><i class="fa-brands fa-instagram"></i></a></div>
+                <div><a href="https://github.com/AnkoorNagargoje"><i class="fa-brands fa-github"></i></a></div>
+                <div><a href="https://snapchat.com/anko.r"><i class="fa-brands fa-snapchat"></i></a></div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <br><bR>
+    <img src="{% static '/images/my-coding-journey.jpeg' %}" alt="my coding journey header image"
+         class="blog-header-image">
+
+    <div class="blog-content">
+        <p>
+            hi guys 👋 welcome to my blog. well, this is my first blog, its all about how i got into coding and making
+            web apps and loving it!
+        </p>
+        <br>
+        <h2>the start of the coding journey!</h2>
+        <p>
+            so the story starts from ‘bout 6 years ago, i was in 7th standard, studying in podar international school,
+            nashik, maharashtra. in school we(we = all my classmates, bro) were taught html as our first language, were
+            taught to make web pages, make tables, insert images and other basic stuff and since then my hunger for
+            learning web languages and making web pages increased, i became passionate about making web pages, yeah i
+            know i was a noob at that time and i still am but you learn on the way. would code html only in school
+            during the computer lab time. i knew just plain html at that time, no css no nothing.
+        </p>
+        <p>
+            Then got into 8th standard and were still being taught html, but it was kinda advanced html, consisted of
+            input tags and buttons and stuff. There was no flexbox taught at that time which is 6 years ago, and now you
+            can't make a single page without using flexbox😝 .
+        </p>
+        <br>
+        <h2>some side projects</h2>
+        <p>
+            The one thing i did in 8th standard that i’m very proud of is that i learned 3d printing and 3d designing,
+            our teacher taught 3d designing in our school computer lab using
+            <a href="https://tinkercad.com" class="name-border">tinkercad</a>, which was the only software
+            which we knew could help us design stuff in 3d. i had made crazy designs for inter-school competition, and
+            guess what, we won the competition, i donno if we won because of me but you know.....😌 😉 hehe.
+            here’s what i made at that time based on the musical instruments theme of the competition.
+            these 3d designs seemed soo crazy to 13-year-old ankoor🤯 and they still are!
+        </p>
+        <br>
+        <div class="blog-images-flex">
+            <div>
+                <img src="{% static '/images/water-slide.png' %}" alt="water slide 3d design"
+                     class="blog-content-images">
+            </div>
+            <div>
+                <img src="{% static '/images/flute-ride.png' %}" alt="flute ride 3d design" class="blog-content-images">
+            </div>
+            <div>
+                <img src="{% static '/images/guitar-slide.png' %}" alt="guitar slide 3d design"
+                     class="blog-content-images">
+            </div>
+        </div>
+        <br><br>
+
+        <h2>entry of a real programming language</h2>
+        <p>
+            transition to class 9th... now 9th standard was one of my best school years! just because all of my best
+            friends were in the same class. i was much more interested in programming than my friends, so i used to
+            everyone that i'm a hacker because i know html, but that 'i'm a hacker' greatness was for a short time until
+            the real gangster entered the chat, java. yes java, only java not script😉. we were taught java in 9th
+            standard and honestly, java was a headache for me at that time.
+        </p>
+        <p>
+            the syllabus was full of object-oriented programming we were taught to define functions and call classes and
+            constructors and destructors, that's all i remember. then passed 9th standard with not so good % cause you
+            know, you can't study when all your besties are around, it's just enjoyment. then comes the 10th standard,
+            in 10th had only some of my best friends in my class cause management used to shuffle the children into
+            different classes each year. now talking about programming, in 10th too we were taught java, but now all
+            that find prime number, and palindrome and create arrays and advanced stuff. i started to love programming
+            in java because.... i donno why i liked java!🙃 but it was like i knew how to program and run
+            the program without any errors and then used to roam in the computer lab solving doubts of the girls... and
+            yes, doubts of boys too🤭😁. Then passed 10th with 98 marks in computer studies, sick right! didn’t give the
+            cs exam cause the coronavirus pulled up! but gave 6 exams and based on that got marks for the cs exam.
+            i had 94% in 10th. i don’t believe it. 😂
+        </p>
+        <br>
+
+        <h2>learning python and django</h2>
+        <p>
+            as the pandemic started, i used to watch tv and play nfs underground 2, all day! then i started
+            watching a program on history tv 18 called
+            <a href="https://en.wikipedia.org/wiki/Shipping_Wars" class="name-border">shipping wars</a>.
+            i liked that show a lot because it had that competition kinda vibe in it. some bunch of people used to bid
+            on stuff to ship it from one place to another and watching that program, an idea of making a web app showed
+            on the program struck my mind. i didn't knew anything at that time, didn't knew what product market fit,
+            marketing, business plans, i just wanted to do something great and buy a lambo😉.</p>
+        <p>
+            i then started researching on how you make web apps and what
+            languages used to make those kinda web apps simultaneously while preparing for jee(i’m kidding, i wasn’t
+            and i’m still not studying😅😭). after a lot of research went ahead to learn python, ordered a book called
+            <a href="https://www.amazon.in/Python-Crash-Course-Eric-Matthes/dp/1593279280" class="name-border">
+                python crash course
+            </a>,
+            by eric matthes and then started learning from YouTube, yeah!🙂 i watched a
+            <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" class="name-border">youtube video by mosh hamedani</a>,
+            bruh, he's the best coding teacher out there. at the end of the video, mosh introduced me
+            to a python framework called <a href="https://www.djangoproject.com/" class="name-border">django</a> and i
+            was amazed by what all stuff django could do and so easily.
+        </p>
+        <p>
+            Then i started making the web app.
+            it took me months because that was the first time i was using django, it was my first project and i didn’t
+            even learn the django framework, just started and that’s the thing i admire about myself. i just
+            start doing things and learn on the way! self love bruh! yeah i left that project in the middle cause i
+            couldn’t handle that entrepreneur vibes(jk)😉, no but i left building it any further cause dad said that
+            you should stop doing these things and focus on studies. so i did what he said.
+        </p>
+        <br>
+
+        <h2>gettin' back to my passion</h2>
+        <p>
+            after leaving the project in the middle, i started studying, started the preparation for jee which was just
+            8 months away. when ever i used to open my laptop to get going with the zoom classes, i used to stare at
+            pycharm, my code editor(a software bro, not a girl in my class😏). i resisted. i was far away from my ❤️.
+            i deleted pycharm, github account and everything(deleting the github account was the worst decision of
+            my life😭). I studied till my board exams, which are now over. but the distance didn't last long(it was long
+            enough for me tho🥹), just after two months on my birthday, i got a new laptop, so i just wanted to see how
+            pycharm works in mah new lapi. i opened pycharm
+        </p>
+        <p>and then, there was no deleting it,</p>
+        <p>
+            that means, i was back, but
+            as a result of taking a big break from coding i forgot how to even start a new django project! forgeting the
+            basics was a nightmare but then it was going kinda great, i'm was recalling stuff. i learned it all by
+            myself so recalling things was easier.
+        </p>
+        <br>
+
+        <h2>birth of hyperlynk</h2>
+        <p>
+            as a result of a big break, my self-confidence level was on the ground, there was only one way that i could
+            regain my self-confidence and recall all development processes, which was by starting a new project,
+            so i started making a link in bio tool, yes and that’s how
+            <a href="http://hyperlynk-1.herokuapp.com" target="_blank" class="name-border">hyperlynk</a> was born.
+            hyperlynk is the free link-in-bio tool that pays users, yes it pays users! but it isn’t launched yet.
+            you gotta have patience, hyperlynk could be your side hustle. just make a hyperlynk and get money in your
+            bank account at the end of every month😉.
+        </p>
+        <p>
+            while learning django i also learned tailwind css, it's dope, easy to work with and powerful library,
+            made the new u.i. of hyperlynk with tailwind. loved tailwind but i still like vanilla css(i like
+            crying😅😭),
+            no cap. i love animating stuff using keyframes rule, my favourite part of using vanilla css is that when you
+            use linear or radial gradient and it actually looks cool, feels like heaven!😌
+        </p>
+        <br>
+        <h2>break pt. 2</h2>
+        <p>
+            everything was going great, was coding for atleast 5 hours with studying but then again dad said that you
+            again gotta stop coding bro, need to study for jee exams, gotta get into iit bombay(the dream of every
+            parent in india), so i stopped coding for like 4 months. i was missing to code, was missing the journey of
+            buidling stuff, was missing the anger and worthless feeling that comes when you miss a semicolon and cry all
+            night, was missing the, 'this thing could work' thoughts which would come while brushing my teeth.
+        </p>
+        <br>
+
+        <h2>comeback pt. 2</h2>
+        <p>
+            so, after a long break of 4 months, as soon as my 12 board exams were done, i started working on my
+            portfolio, this is what i’ve created after finishing my exams.
+        </p>
+        <p>
+            That’s how my coding journey is! a lot of breaks, a lot of sleepless nights, a lot of why tf this ain’t
+            working, a lot of this a lot of that, hope this journey is gonna continue, this blog will get updated and
+            i hope you liked this blog, hope you learned something.
+        </p>
+
+        <p>
+            thank you guys,<br>
+            i’d love to know about your coding journey! share it on twitter and tag me or dm me your coding journey blog
+            right <a href="https://twitter.com/ankoornagargoje/" class="name-border">here.</a>😃
+        </p>
+        <p>
+            Thanks for reading till here💙
+        </p>
+    </div>
+</div>
 {% endblock %}

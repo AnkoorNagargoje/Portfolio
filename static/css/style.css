@@ -1,14 +1,10 @@
 html{
     scroll-behavior: smooth;
-    max-width:100%;
-    overflow-x:hidden;
 }
 body{
     background-color: #141414;
     color: #cbd5e1;
     margin:0;
-    max-width:100%;
-    overflow-x:hidden;
     background: repeating-radial-gradient(circle, transparent, transparent 7.0px, #303030 7.0px, #303030 9.0px), repeating-radial-gradient(circle, transparent, transparent 7.0px, #303030 7.0px, #303030 9.0px), #303030;
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px, 40px 20px;
@@ -112,15 +108,13 @@ h1{
     animation-delay: 6s;
     animation-fill-mode: forwards;
 }
-@media screen and (max-width: 1300px), screen and (max-height: 1200px) {
-    .firstdiv{margin-bottom:100px;}
 
-}
 @media screen and (max-width: 780px) {
     .firstdiv{
         flex-direction:column;
         margin-top:0vh;
         max-height:100vh;
+        margin-bottom:100px;
     }
     .firstdiv div:nth-child(2){
         width:70%
@@ -169,18 +163,18 @@ h1{
         display: flex;
     }
     .dotted-image-background-1{
-        width:300px;
-        height:300px;
+        width:200px;
+        height:200px;
         background-size:20px 20px;
         right:-100px;
-        top:-100px;
+        top:0;
     }
     .dotted-image-background-2{
-        width:300px;
-        height:300px;
+        width:200px;
+        height:200px;
         background-size:20px 20px;
         left:-100px;
-        bottom:-100px;
+        bottom:0;
     }
 }
 
@@ -467,6 +461,10 @@ h1{
 }
 
 @media screen and (max-width: 540px) {
+    html, body{
+        max-width:100%;
+        overflow-x:hidden;
+    }
     .tech-stack-div{
         width:100%;
         height:70vh;
@@ -688,7 +686,7 @@ h1{
 @media screen and (min-width: 721px) and (max-width:1000px) {
     .tech-stack-div{
         width:90%;
-        height:80vh;
+        height:70vh;
         padding:0px;
     }
     .tech-stack-div h3{
@@ -792,7 +790,7 @@ h1{
 @media screen and (min-width: 1000px) and (max-width:1200px) {
     .tech-stack-div{
         width:90%;
-        height:80vh;
+        height:70vh;
         padding:0px;
     }
     .tech-stack-div h3{

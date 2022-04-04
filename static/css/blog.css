@@ -1,0 +1,110 @@
+.blog{
+    width:70%;
+    margin:auto;
+    padding:40px;
+    background-color:#202020;
+    margin-top:50px;
+    text-align:center;
+    border-radius:20px;
+    text-transform: lowercase;
+}
+
+h1, h2, h3, p{
+    text-align:left;
+    margin:5px !important;
+}
+.blog-read-time{
+    border-bottom: dashed 1px #f6f6f6;
+}
+.blog-type-journey{
+    color:rgba(247,253,166,1);
+}
+.blog-header-image{
+    width:70%;
+}
+.blog-header-flex{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:baseline;
+}
+.blog-title-flex{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+}
+.blog-info-flex{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.blog-socials-flex{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    font-size:2em;
+}
+.blog-socials-flex div:hover{
+    background-image: linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.blog-title{
+    border-radius:2px;
+    border-image-source: linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+}
+
+.blog-content{
+    width:80%;
+    font-size:1.5em;
+    text-align:left;
+    font-weight:300;
+    margin:auto;
+    margin-top:100px;
+}
+
+.blog-content p{
+    font-size:1em;
+    margin:10px 0px !important;
+    line-height:30px;
+}
+.blog-content h2{
+    margin:20px 0px !important;
+}@media screen and (max-width:720px){
+    .blog{
+        width:90%;
+        padding:10px;
+    }
+    .blog-content{
+        width:90%;
+    }
+    .blog-content h2{
+        font-size:1.4em;
+    }
+    .blog-content p{
+        font-size:.8em;
+    }
+
+}
+.blog-images-flex{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:space-between;
+}
+.blog-content-images{
+    width:250px;
+    height:250px;
+    margin:auto;
+    border-radius:20px;
+}
+.name-border{
+    border-radius:2px;
+    border-image-source: linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+}
